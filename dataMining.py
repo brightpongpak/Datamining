@@ -32,20 +32,19 @@ def transition():
         map_ans[i] = list_ans[i-1]
     return map_ans
 
-def GG():
-    transaction2=[["M","O","N","K","E","Y"],["D","O","N","K","E","Y"],["M","A","K","E"],["M","U","C","K","Y"],["C","O","O","K","I","E"]]
-    return transaction2
+# def GG():
+#     transaction2=[["M","O","N","K","E","Y"],["D","O","N","K","E","Y"],["M","A","K","E"],["M","U","C","K","Y"],["C","O","O","K","I","E"]]
+#     return transaction2
 
-def mapGG():
-    zzz = 1
-    mapGG = {}
-    for i in GG():
-        mapGG[zzz] = i
-        zzz += 1
-    return mapGG
+# def mapGG():
+#     zzz = 1
+#     mapGG = {}
+#     for i in GG():
+#         mapGG[zzz] = i
+#         zzz += 1
+#     return mapGG
 
 def AR():
-    item=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","AA","BB","CC","DD","EE","FF","GG","HH","II","JJ","KK","LL","MM","NN","OO","PP","QQ","RR","SS","TT","UU","VV","WW","XX"]
     map_sum = {}
     map_data = {}
     map_1 = {}
@@ -57,7 +56,7 @@ def AR():
     for key,valueOfkey in transition().items():
         map_data[key] = valueOfkey
     for key,valueOfkey in map_data.items():
-        for i in item:
+        for i in items():
             for j in valueOfkey:
                 if (i == j):
                     map_sum[i] = map_sum.get(i,0) + 1
